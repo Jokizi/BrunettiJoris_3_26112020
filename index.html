@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accueil.css">
     <link rel="shortcut icon" type="image/ico" href="img/logo/restau.ico"/>
     <script src="https://kit.fontawesome.com/6e676cf9ec.js" crossorigin="anonymous"></script>
     <title>ohmyfood</title>
 </head>
 <body>
     <header>
-        <img src="img/logo/ohmyfood@2x.svg" alt="logo oh my food">
+        <div class="logo">
+            <img src="img/logo/ohmyfood@2x.svg" alt="logo oh my food">
+        </div>
         <section class="localisation">
-            <span>
+            <span class="lieux">
                 <i class="fas fa-map-marker-alt"></i>
                 <input type="search" name="search" placeholder="Paris, Belleville">
-            </span> 
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>
-                Découvrez des restaurants d'exception, séléctionnés par nos soins.
-            </p>
-            <button>
-                Explorer nos restaurants
-            </button>
+            </span>
+            <div class="explorer">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>
+                    Découvrez des restaurants d'exception, séléctionnés par nos soins.
+                </p>
+                <button>
+                    Explorer nos restaurants
+                </button>
+            </div>
         </section>
     </header>
     <nav class="fonctionnement">
@@ -106,7 +111,7 @@
                 Mentions Légales
             </p>
         </a>
-        <a href="#">
+        <a href="mailto:ohmyfoo@gmail.com">
             <p>
                 Contact
             </p>

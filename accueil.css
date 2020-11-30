@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Roboto.ttf"; /* Définition d'une nouvelle police nommée Roboto */
+  src: url("Roboto.ttf");
+}
+
+body {
+  font-family: "Roboto.ttf";
+}
+
+/* <Partie HEADER> */
+
+/* <div class="logo"> */
+.logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  font-size: 10px;
+}
+/* </div class="logo"> */
+/* <section class="localisation"> */
+/* <span class="lieux"> */
+.lieux {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  background-color: grey;
+}
+
+.lieux input {
+  border: inherit;
+  background-color: grey;
+  padding-left: 1em;
+}
+
+.lieux i {
+  margin-left: 5em;
+}
+/* </span class="lieux"> */
+/* <div class="explorer"> */
+.explorer {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  padding: 5% 0 15% 0;
+  align-items: center;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: inherit;
+}
+
+.explorer p {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 2em;
+}
+
+.explorer button {
+  font-weight: bold;
+  border-radius: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
