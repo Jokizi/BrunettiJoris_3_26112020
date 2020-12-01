@@ -31,64 +31,84 @@
     </header>
     <nav class="fonctionnement">
         <h2>Fonctionnement</h2>
-        <button>
-            <span>1</span>
-            <i class="fas fa-mobile-alt"></i>
-            Choisissez un restaurant
-        </button>
-        <button>
-            <span>2</span>
-            <i class="fas fa-list-ul"></i>
-            Composez votre menu
-        </button>
-        <button>
-            <span>3</span>
-            <i class="fas fa-store"></i>
-            Dégustez au restaurant
-        </button>
+        <div class="box-button">
+            <button>
+                <span>1</span>
+                <i class="fas fa-mobile-alt"></i>
+                Choisissez un restaurant
+            </button>
+            <button>
+                <span>2</span>
+                <i class="fas fa-list-ul"></i>
+                Composez votre menu
+            </button>
+            <button>
+                <span>3</span>
+                <i class="fas fa-store"></i>
+                Dégustez au restaurant
+            </button>
+        </div>
     </nav>
     <article class="restaurants">
         <h2>Restaurants</h2>
         <div class="restaurants-box-choix">
-            <article class="restaurants-choix">
-                <a href="#">
-                    <img src="img/photos/la-palette-du-gout.jpg" alt="photo du restaurant la palette à du goût">
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
+            <article class="restaurants-choix palette">
+                <a class="choix-lien" href="#">
+                    <p>Nouveau</p>
+                    <img class="choix-img" src="img/photos/la-palette-du-gout.jpg" alt="photo du restaurant la palette à du goût">
                 </a>
-                <a href="#">
-                    <i class="far fa-heart"></i>
-                </a>
+                <div class="choix-texte">
+                    <a href="#">
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                    </a>
+                    <a href="#">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
             </article>
-            <article class="restaurants-choix">
-                <a href="#">
-                    <img src="img/photos/la-note-enchantee.jpg" alt="photo du restaurant la note enchantée">
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p>
+            <article class="restaurants-choix enchantee">
+                <a class="choix-lien" href="#">
+                    <p>Nouveau</p>
+                    <img class="choix-img" src="img/photos/la-note-enchantee.jpg" alt="photo du restaurant la note enchantée">
                 </a>
-                <a href="#">
-                    <i class="far fa-heart"></i>
-                </a>
+                <div class="choix-texte">
+                    <a href="#">
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                    </a>
+                    <a href="#">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
             </article>
-            <article class="restaurants-choix">
-                <a href="#">
-                    <img src="img/photos/a-la-française.jpg" alt="photo du restaurant à la française">
-                    <h3>À la française</h3>
-                    <p>Cité Rouge</p>
+            <article class="restaurants-choix française">
+                <a class="choix-lien" href="#">
+                    <img  class="choix-img" src="img/photos/a-la-française.jpg" alt="photo du restaurant à la française">
                 </a>
-                <a href="#">
-                    <i class="far fa-heart"></i>
-                </a>
+                <div class="choix-texte">
+                    <a href="#">
+                        <h3>À la française</h3>
+                        <p>Cité Rouge</p>
+                    </a>
+                    <a href="#">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
             </article>
-            <article class="restaurants-choix">
-                <a href="#">
-                    <img src="img/photos/le-delice-des-sens.jpg" alt="photo du restaurant le délice des sens">
-                    <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p>
+            <article class="restaurants-choix delice">
+                <a class="choix-lien" href="#">
+                    <img class="choix-img" src="img/photos/le-delice-des-sens.jpg" alt="photo du restaurant le délice des sens">
                 </a>
-                <a href="#">
-                    <i class="far fa-heart"></i>
-                </a>
+                <div class="choix-texte">
+                    <a href="#">
+                        <h3>Le délice des sens</h3>
+                        <p>Folie-Méricourt</p>
+                    </a>
+                    <a href="#">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
             </article>
         </div>
     </article>
@@ -102,7 +122,7 @@
         </a>
         <a href="#">
             <p>
-                <i class="fas fa-hands-helping"></i>
+                <i class="fas fa-hands-helping mains"></i>
                 Devenir partenaire
             </p>
         </a>

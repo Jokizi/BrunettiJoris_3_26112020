@@ -3,8 +3,30 @@
   src: url("Roboto.ttf");
 }
 
+@font-face {
+  font-family: "Shrikhand.ttf"; /* Définition d'une nouvelle police nommée Shrikhand */
+  src: url("Shrikhand.ttf");
+}
+
+html {
+  /* Définition des variables couleur */
+  --primary: #9356dc;
+  --secondary: #ff79da;
+  --tertiary: #99e2d0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto.ttf";
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 /* <Partie HEADER> */
@@ -26,12 +48,12 @@ body {
   align-items: center;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
-  background-color: grey;
+  background-color: #eaeaea;
 }
 
 .lieux input {
   border: inherit;
-  background-color: grey;
+  background-color: #eaeaea;
   padding-left: 1em;
 }
 
@@ -41,7 +63,7 @@ body {
 /* </span class="lieux"> */
 /* <div class="explorer"> */
 .explorer {
-  background-color: green;
+  background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   padding: 5% 0 15% 0;
@@ -70,4 +92,189 @@ h1 {
   padding-bottom: 1em;
   padding-left: 1em;
   padding-right: 1em;
+  color: white;
+  background: -linear-gradient(top, var(--secondary), var(--primary));
+  background: linear-gradient(to bottom, var(--secondary), var(--primary));
+  border: inherit;
 }
+/* </div class="explorer"> */
+/* </section class="localisation"> */
+/* </Partie HEADER> */
+
+/* <nav class="fonctionnement"> */
+.fonctionnement {
+  padding: 7% 0 15% 0;
+}
+
+.fonctionnement h2 {
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+
+/* <div class="box-button"> */
+.box-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-button button {
+  border-radius: 1.5em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 1.5em;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+  background-color: #f6f6f6;
+}
+
+.box-button button:hover {
+  background-color: #f5edff;
+}
+
+.box-button i {
+  margin-right: 1.5em;
+  font-size: 1.3em;
+}
+
+.box-button i:hover {
+  color: var(--primary);
+}
+
+.fonctionnement span {
+  color: white;
+  background-color: var(--primary);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -30px;
+}
+/* </nav class="fonctionnement"> */
+
+/* <article class="restaurants"> */
+.restaurants {
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-bottom: 4em;
+}
+
+.restaurants h2 {
+}
+
+/* <div class="restaurants-box-choix"> */
+.restaurants-box-choix {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 16em);
+  grid-gap: 1em;
+}
+
+/* <article class="restaurants-choix */
+.restaurants-choix {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
+}
+
+.choix-img {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.choix-lien {
+  display: flex;
+  position: relative;
+  flex: 1;
+}
+
+.choix-lien p {
+  z-index: 1;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  background-color: #99e2d0;
+  color: #36a78b;
+  font-weight: bold;
+}
+
+.restaurants-choix h3 {
+  margin: inherit;
+  padding-bottom: 0.3em;
+}
+
+.restaurants-choix p {
+  margin: inherit;
+}
+
+.choix-texte {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1em 1em 1em;
+}
+
+.choix-texte i {
+  font-size: 1.5em;
+}
+
+.palette {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.enchantee {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.française {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.delice {
+  grid-column: 1;
+  grid-row: 4;
+}
+/* </article class="restaurants-choix */
+/* </div class="restaurants-box-choix"> */
+/* <article class="restaurants"> */
+
+/* <Partie FOOTER> */
+
+footer h3 {
+  font-family: "Shrikhand.ttf";
+  color: white;
+}
+
+footer {
+  background-color: #353535;
+  padding: 1em 0em 2em 1em;
+}
+
+footer a {
+  color: white;
+}
+
+footer i {
+  margin-right: 0.5em;
+  color: white;
+}
+
+.mains {
+  margin-right: 0.1em;
+}
+/* </Partie FOOTER> */
