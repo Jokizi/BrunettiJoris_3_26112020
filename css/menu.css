@@ -82,6 +82,20 @@ h2 {
   font-size: 1em;
 }
 
+h2 span {
+  border-bottom: solid 2px var(--tertiary);
+  padding-bottom: 0.3em;
+}
+
+.choix {
+  background-color: white;
+  box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
+  border-radius: 1em 1em 1em 1em;
+  padding-top: 0.2em;
+  padding-left: 1em;
+  margin-bottom: 1.5em;
+}
+
 .menu button {
   font-weight: bold;
   border-radius: 2em;
@@ -94,6 +108,7 @@ h2 {
   background: -linear-gradient(top, var(--secondary), var(--primary));
   background: linear-gradient(to bottom, var(--secondary), var(--primary));
   border: inherit;
+  cursor: pointer;
 }
 
 /* <Partie FOOTER> */

@@ -97,6 +97,7 @@ h1 {
   background: -linear-gradient(top, var(--secondary), var(--primary));
   background: linear-gradient(to bottom, var(--secondary), var(--primary));
   border: inherit;
+  cursor: pointer;
 }
 /* </div class="explorer"> */
 /* </section class="localisation"> */
@@ -185,6 +186,7 @@ h1 {
   border-radius: 1em;
   overflow: hidden;
   box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
+  cursor: pointer;
 }
 
 .choix-img {
