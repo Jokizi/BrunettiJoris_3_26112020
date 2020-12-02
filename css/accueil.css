@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Roboto.ttf"; /* Définition d'une nouvelle police nommée Roboto */
-  src: url("Roboto.ttf");
+  src: url("fonts/Roboto.ttf");
 }
 
 @font-face {
   font-family: "Shrikhand.ttf"; /* Définition d'une nouvelle police nommée Shrikhand */
-  src: url("Shrikhand.ttf");
+  src: url("fonts/Shrikhand.ttf");
 }
 
 html {
@@ -35,8 +35,8 @@ a {
 .logo {
   display: flex;
   justify-content: center;
-  padding-top: 1em;
-  padding-bottom: 0.5em;
+  padding-top: 2em;
+  padding-bottom: 1em;
   font-size: 10px;
 }
 /* </div class="logo"> */
@@ -88,6 +88,7 @@ h1 {
 .explorer button {
   font-weight: bold;
   border-radius: 2em;
+  box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
   padding-top: 1em;
   padding-bottom: 1em;
   padding-left: 1em;
@@ -119,9 +120,11 @@ h1 {
 }
 
 .box-button button {
+  border: inherit;
   border-radius: 1.5em;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
   padding-left: 1em;
   padding-right: 1em;
   margin-bottom: 1.5em;
@@ -167,9 +170,6 @@ h1 {
   padding-bottom: 4em;
 }
 
-.restaurants h2 {
-}
-
 /* <div class="restaurants-box-choix"> */
 .restaurants-box-choix {
   display: grid;
@@ -201,7 +201,6 @@ h1 {
 }
 
 .choix-lien p {
-  z-index: 1;
   position: absolute;
   top: 10px;
   right: 10px;
