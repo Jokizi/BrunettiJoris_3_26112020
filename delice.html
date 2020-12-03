@@ -3,96 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="shortcut icon" type="image/ico" href="img/logo/restau.ico"/>
     <script src="https://kit.fontawesome.com/6e676cf9ec.js" crossorigin="anonymous"></script>
     <title>ohmyfood</title>
 </head>
 <body>
     <header>
-        <button>
-            <i class="fas fa-arrow-left"></i>
-        </button>
-        <img src="img/logo/ohmyfood@2x.svg" alt="logo oh my food">
-        <img src="img/photos/le-delice-des-sens.jpg" alt="photo du restaurant le délice des sens">
+        <div class="back-logo">
+            <a href="#">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <img src="img/logo/ohmyfood@2x.svg" alt="logo oh my food">
+        </div>
+        <img src="img/photos/le-delice-des-sens.jpg" class="photo_restau" alt="photo du restaurant le délice des sens">
     </header>
     <article class="menu">
         <h1>Le délice des sens <a href="#"><i class="far fa-heart"></i></a></h1>
         <article class="entrees">
-            <h2>ENTRÉES</h2>
-            <a href="#">
-                <p>
-                    Tartare de thon<br>
-                    Assaisonné au yuzu <span>25€</span>
-                </p>
-                <i class="far fa-check-circle"></i>
-            </a>
-            <a href="#">
-                <p>
-                    Bouchée de homard croustillant<br>
-                    Et sa farandole de petits légumes <span>35€</span>
-                </p>
-                <i class="far fa-check-circle"></i>
-            </a>
-            <a href="#">
-                <p>
-                    Velouté de cèpes<br>
-                    Aux truffes <span>20€</span>
-                </p>
-                <i class="far fa-check-circle"></i>
-            </a>
+            <h2>
+                <span>ENTR</span>ÉES
+            </h2>
+            <div class="choix">
+                <a href="#">
+                    <h3>Tartare de thon</h3>
+                    <div class="choix_texte">
+                        <p>Assaisonné au yuzu</p>
+                        <span class="prix">25€</span>
+                    </div>
+                    <i class="far fa-check-circle"></i>
+                </a>
+            </div>
+            <div class="choix">
+                <a href="#">
+                    <h3>Bouchée de homard croustillant</h3>
+                    <div class="choix_texte">
+                        <p>Et sa farandole de petits légumes</p>
+                        <span class="prix">35€</span>
+                    </div>
+                    <i class="far fa-check-circle"></i>
+                </a>
+            </div>
+            <div class="choix">
+                <a href="#">
+                    <h3>Velouté de cèpes</h3>
+                    <div class="choix_texte">
+                        <p>Aux truffes</p>
+                        <span class="prix">20€</span>
+                    </div>
+                    <i class="far fa-check-circle"></i>
+                </a>
+            </div>
         </article>
         <article class="plats">
-            <h2>PLATS</h2>
-            <a href="#">
-                <p>
-                    Poulet rôti aux herbes de<br>
-                    provence<br>
-                    Et sa crème de truffe <span>40€</span>
-                </p>
-                <i class="far fa-check-circle"></i>
-            </a>
-            <a href="#">
-                <p>
-                    Langouste rôtie<br>
-                    Et ses légumes de saison <span>35€</span>
-                </p>
-                <i class="far fa-check-circle"></i>
-            </a>
-            <a href="#">
-                <p>
-                    Côte de boeuf angus<br>
-                    Et sa purée de panais <span>44€</span>
-                </p>
-                <i class="far fa-check-circle"></i>
-            </a>
+            <h2>
+                <span>PLAT</span>S
+            </h2>
+            <div class="choix">
+                <a href="#">
+                    <h3>
+                        Poulet rôti aux herbes de<br>
+                        provence
+                    </h3>
+                    <div class="choix_texte">
+                        <p>Et sa crème de truffe</p>
+                        <span class="prix">40€</span>
+                    </div>
+                    <i class="far fa-check-circle"></i>
+                </a>
+            </div>
+            <div class="choix">
+                <a href="#">
+                    <h3>Langouste rôtie</h3>
+                    <div class="choix_texte">
+                        <p>Et ses légumes de saison</p>
+                        <span class="prix">35€</span>
+                    </div>
+                    <i class="far fa-check-circle"></i>
+                </a>
+            </div>
+            <div class="choix">
+                <a href="#">
+                    <h3>Côte de boeuf angus</h3>
+                    <div class="choix_texte">
+                        <p>Et sa purée de panais</p>
+                        <span class="prix">44€</span>
+                    </div>
+                    <i class="far fa-check-circle"></i>
+                </a>
+            </div>
         </article>
         <article class="desserts">
-            <h2>DESSERTS</h2>
-            <a href="#">
-                <p>
-                    Farandole de desserts<br>
-                    Du chef <span>18€</span>
-                </p>
-                <i class="far fa-check-circle"></i>
-            </a>
-            <a href="#">
-                <p>
-                    Crème brulée<br>
-                    Revisitée <span>22€</span>
-                </p>
-                <i class="far fa-check-circle"></i>
-            </a>
-            <a href="#">
-                <p>
-                    Tiramisu<br>
-                    À la noisette <span>23€</span>
-                </p>
-                <i class="far fa-check-circle"></i>
-            </a>
+            <h2>
+                <span>DESS</span>ERTS
+            </h2>
+            <div class="choix">
+                <a href="#">
+                    <h3>Farandole de desserts</h3>
+                    <div class="choix_texte">
+                        <p>Du chef</p>
+                        <span class="prix">18€</span>
+                    </div>
+                    <i class="far fa-check-circle"></i>
+                </a>
+            </div>
+            <div class="choix">
+                <a href="#">
+                    <h3>Crème brulée</h3>
+                    <div class="choix_texte">
+                        <p>Revisitée</p>
+                        <span class="prix">22€</span>
+                    </div>
+                    <i class="far fa-check-circle"></i>
+                </a>
+            </div>
+            <div class="choix">
+                <a href="#">
+                    <h3>Tiramisu</h3>
+                    <div class="choix_texte">
+                        <p>À la noisette</p>
+                        <span class="prix">23€</span>
+                    </div>
+                    <i class="far fa-check-circle"></i>
+                </a>
+            </div>
         </article>
-        <button>
-            Commander
-        </button>
+        <div class="commande">
+            <button>
+                Commander
+            </button>
+        </div>
     </article>
     <footer>
         <h3>ohmyfood</h3>
@@ -113,7 +153,7 @@
                 Mentions Légales
             </p>
         </a>
-        <a href="#">
+        <a href="mailto:ohmyfoo@gmail.com">
             <p>
                 Contact
             </p>
