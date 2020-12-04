@@ -56,7 +56,14 @@ header {
 
 .photo_restau {
   object-fit: cover;
-  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 500;
+}
+
+.photo_enchantee {
+  object-fit: cover;
+  height: 15.5em;
   width: 100%;
   position: relative;
   z-index: 500;
