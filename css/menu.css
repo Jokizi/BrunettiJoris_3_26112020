@@ -183,3 +183,87 @@ footer i {
   margin-right: 0.1em;
 }
 /* </Partie FOOTER> */
+
+/* Responsive */
+
+@media screen and (min-width: 500px) and (max-width: 995px) {
+  .photo_restau {
+    height: 16em;
+  }
+
+  .photo_enchantee {
+    height: 16em;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  .entrees {
+    margin-right: 5em;
+    margin-left: 5em;
+  }
+
+  .plats {
+    margin-right: 5em;
+    margin-left: 5em;
+  }
+
+  .desserts {
+    margin-right: 5em;
+    margin-left: 5em;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 996px) {
+  .photo_restau {
+    height: 20em;
+  }
+
+  .photo_enchantee {
+    height: 20em;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  .entrees {
+    margin-right: 8em;
+    margin-left: 8em;
+  }
+
+  .plats {
+    margin-right: 8em;
+    margin-left: 8em;
+  }
+
+  .desserts {
+    margin-right: 8em;
+    margin-left: 8em;
+  }
+
+  .commande button {
+    width: 20%;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
