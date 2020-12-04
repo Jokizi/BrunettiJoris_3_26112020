@@ -279,3 +279,109 @@ footer i {
   margin-right: 0.1em;
 }
 /* </Partie FOOTER> */
+
+/* Responsive */
+
+@media screen and (min-width: 500px) and (max-width: 995px) {
+  .explorer {
+    padding: 1% 0 4% 0;
+  }
+
+  .fonctionnement {
+    padding: 1% 0 2% 0;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .box-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .box-button button {
+    width: 28%;
+  }
+
+  .restaurants-box-choix {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 996px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .explorer {
+    padding: 1% 0 4% 0;
+  }
+
+  .explorer button {
+    width: 20%;
+  }
+
+  .fonctionnement {
+    padding: 1% 0 2% 0;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .box-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .box-button button {
+    width: 25%;
+  }
+
+  .restaurants-box-choix {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 16em);
+    grid-gap: 1em;
+  }
+
+  .palette {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .enchantee {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .française {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .delice {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .restaurants-box-choix {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
