@@ -144,7 +144,7 @@ h2 span {
 .menu button {
   font-weight: bold;
   border-radius: 2em;
-  box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
+  box-shadow: 0.2em 0.2em 0.2em 0.2em #b6a9a9;
   padding-top: 1em;
   padding-bottom: 1em;
   padding-left: 3em;
@@ -154,6 +154,11 @@ h2 span {
   background: linear-gradient(to bottom, var(--secondary), var(--primary));
   border: inherit;
   cursor: pointer;
+}
+
+.menu button:hover {
+  box-shadow: 0.2em 0.2em 0.2em 0.2em #3f3838; /* animation bouton violet */
+  filter: brightness(130%);
 }
 /* </div class="commande"> */
 /* </article class="menu"> */

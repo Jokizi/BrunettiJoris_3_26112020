@@ -88,7 +88,7 @@ h1 {
 .explorer button {
   font-weight: bold;
   border-radius: 2em;
-  box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
+  box-shadow: 0.2em 0.2em 0.2em 0.2em #b6a9a9;
   padding-top: 1em;
   padding-bottom: 1em;
   padding-left: 1em;
@@ -98,6 +98,11 @@ h1 {
   background: linear-gradient(to bottom, var(--secondary), var(--primary));
   border: inherit;
   cursor: pointer;
+}
+
+.explorer button:hover {
+  box-shadow: 0.2em 0.2em 0.2em 0.2em #3f3838; /* animation bouton violet */
+  filter: brightness(130%);
 }
 /* </div class="explorer"> */
 /* </section class="localisation"> */
@@ -229,6 +234,11 @@ h1 {
 
 .choix-texte i {
   font-size: 1.5em;
+}
+
+.choix-texte i:hover {
+  background: -linear-gradient(top, var(--secondary), var(--primary));
+  background: linear-gradient(to bottom, var(--secondary), var(--primary));
 }
 
 .palette {
