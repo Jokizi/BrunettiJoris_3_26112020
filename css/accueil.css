@@ -100,7 +100,7 @@ h1 {
   cursor: pointer;
 }
 
-.explorer button:hover {
+.explorer button:active {
   box-shadow: 0.2em 0.2em 0.2em 0.2em #3f3838; /* animation bouton violet */
   filter: brightness(130%);
 }
@@ -142,7 +142,7 @@ h1 {
   background-color: #f6f6f6;
 }
 
-.box-button button:hover {
+.box-button button:active {
   background-color: #f5edff;
 }
 
@@ -151,7 +151,7 @@ h1 {
   font-size: 1.3em;
 }
 
-.box-button i:hover {
+.box-button i:active {
   color: var(--primary);
 }
 

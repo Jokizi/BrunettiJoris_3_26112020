@@ -156,7 +156,7 @@ h2 span {
   cursor: pointer;
 }
 
-.menu button:hover {
+.menu button:active {
   box-shadow: 0.2em 0.2em 0.2em 0.2em #3f3838; /* animation bouton violet */
   filter: brightness(130%);
 }
