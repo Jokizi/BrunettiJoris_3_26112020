@@ -80,13 +80,18 @@ header {
   padding: 1em 0.5em 4em 0.5em;
 }
 
-/*.heart {
-  position: absolute;
-  right: 1em;
-}*/
+/* <animation du coeur> */
+.titre {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 .heart {
   position: relative;
+}
+.vide {
+  font-size: 1.8em;
 }
 
 .plein {
@@ -95,14 +100,15 @@ header {
   top: 0;
   opacity: 0;
   color: var(--secondary);
-  font-size: 1em;
 }
 
 .plein:active {
   opacity: 1;
   transition: opacity 1s ease-in-out;
   z-index: -1;
+  font-size: 1.8em;
 }
+/* </animation du coeur> */
 
 h2 {
   font-size: 1em;
