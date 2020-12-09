@@ -232,14 +232,31 @@ h1 {
   padding: 1em 1em 1em 1em;
 }
 
-.choix-texte i {
+/* <animation du coeur> */
+.vide {
   font-size: 1.5em;
 }
 
-.choix-texte i:hover {
-  background: -linear-gradient(top, var(--secondary), var(--primary));
-  background: linear-gradient(to bottom, var(--secondary), var(--primary));
+.heart {
+  position: relative;
 }
+
+.plein {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  color: var(--secondary);
+  font-size: 1em;
+}
+
+.plein:active {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  z-index: -1;
+  font-size: 1.5em;
+}
+/* </animation du coeur> */
 
 .palette {
   grid-column: 1;

@@ -80,9 +80,28 @@ header {
   padding: 1em 0.5em 4em 0.5em;
 }
 
-h1 a {
+/*.heart {
   position: absolute;
   right: 1em;
+}*/
+
+.heart {
+  position: relative;
+}
+
+.plein {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  color: var(--secondary);
+  font-size: 1em;
+}
+
+.plein:active {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  z-index: -1;
 }
 
 h2 {
