@@ -55,6 +55,7 @@ header {
 /* </div class="back-logo"> */
 
 .photo_restau {
+  -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
   position: relative;
@@ -62,6 +63,7 @@ header {
 }
 
 .photo_enchantee {
+  -o-object-fit: cover;
   object-fit: cover;
   height: 15.5em;
   width: 100%;
@@ -159,6 +161,95 @@ h2 span {
 /* </div class="choix"> */
 /* </div class="choix_texte"> */
 
+/* <Animation Progressive> */
+.entrees {
+  -webkit-animation: entrees 3s linear;
+  animation: entrees 3s linear;
+}
+
+@-webkit-keyframes entrees {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes entrees {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.plats {
+  -webkit-animation: plats 6s linear;
+  animation: plats 6s linear;
+}
+
+@-webkit-keyframes plats {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes plats {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.desserts {
+  -webkit-animation: desserts 9s linear;
+  animation: desserts 9s linear;
+}
+
+@-webkit-keyframes desserts {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes desserts {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* </Animation Progressive> */
+
 /* <div class="commande"> */
 .commande {
   display: flex;
@@ -183,6 +274,7 @@ h2 span {
 
 .menu button:active {
   box-shadow: 0.2em 0.2em 0.2em 0.2em #3f3838; /* animation bouton violet */
+  -webkit-filter: brightness(130%);
   filter: brightness(130%);
 }
 /* </div class="commande"> */
