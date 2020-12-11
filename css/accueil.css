@@ -29,8 +29,99 @@ a {
   color: black;
 }
 
-/* <Partie HEADER> */
+/* <Loading Spinner> */
+/* <div class="loading"> */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: loading 4s linear;
+  animation: loading 4s linear;
+  opacity: 0;
+  background-color: #f6f6f6;
+  z-index: -1;
+}
 
+@-webkit-keyframes loading {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  99% {
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+  }
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  99% {
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+  }
+}
+
+/* <div class="spinner"> */
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1em solid var(--primary);
+  border-right: 1em solid var(--secondary);
+  border-bottom: 1em solid var(--primary);
+  border-left: 1em solid var(--secondary);
+  background: -linear-gradient(top, var(--secondary), var(--primary));
+  background: linear-gradient(to bottom, var(--secondary), var(--primary));
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  -webkit-animation: spinner 2s linear infinite;
+  animation: spinner 2s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner_logo {
+  width: 10em;
+  height: 10em;
+}
+/* </div class="spinner"> */
+/* </div class="loading"> */
+/* </Loading Spinner> */
+
+/* <Partie HEADER> */
 /* <div class="logo"> */
 .logo {
   display: flex;
@@ -102,6 +193,7 @@ h1 {
 
 .explorer button:active {
   box-shadow: 0.2em 0.2em 0.2em 0.2em #3f3838; /* animation bouton violet */
+  -webkit-filter: brightness(130%);
   filter: brightness(130%);
 }
 /* </div class="explorer"> */
@@ -195,6 +287,7 @@ h1 {
 }
 
 .choix-img {
+  -o-object-fit: cover;
   object-fit: cover;
   position: absolute;
   height: 100%;
