@@ -123,18 +123,67 @@ h2 span {
   padding-bottom: 0.3em;
 }
 
+/* <Animation Check> */
 /* <div class="choix"> */
 .choix {
-  background-color: white;
+  background-color: var(--tertiary);
   box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
   border-radius: 1em 1em 1em 1em;
-  padding-top: 0.2em;
-  padding-left: 1em;
   margin-bottom: 1.5em;
+  overflow: hidden;
+  position: relative;
 }
 
-.choix i {
-  display: none;
+/* <div class="anim"> */
+.anim {
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  padding-top: 0.2em;
+  padding-left: 1em;
+  cursor: pointer;
+}
+
+.anim:active {
+  width: 80%;
+  transition: 2s;
+}
+
+.choix::after {
+  content: "\f058";
+  font-family: "Font Awesome\ 5 Free";
+  font-weight: 900;
+  font-size: 2.5em;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 110%;
+  text-overflow: ellipsis;
+}
+
+.choix:active::after {
+  left: 85%;
+  transition-duration: 2s;
+  -webkit-animation: rotation 2s linear;
+  animation: rotation 2s linear;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .choix h3 {
@@ -154,12 +203,20 @@ h2 span {
   font-size: 0.9em;
 }
 
+.choix_texte p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .prix {
   font-weight: bold;
   margin-right: 1em;
 }
-/* </div class="choix"> */
 /* </div class="choix_texte"> */
+/* </div class="anim"> */
+/* </div class="choix"> */
+/* </Animation Check> */
 
 /* <Animation Progressive> */
 .entrees {
@@ -342,6 +399,10 @@ footer i {
     margin-left: 5em;
   }
 
+  .choix:active::after {
+    left: 87%;
+  }
+
   footer {
     text-align: center;
   }
@@ -379,6 +440,10 @@ footer i {
   .desserts {
     margin-right: 8em;
     margin-left: 8em;
+  }
+
+  .choix:active::after {
+    left: 88%;
   }
 
   .commande button {
