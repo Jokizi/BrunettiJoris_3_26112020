@@ -220,69 +220,21 @@ h2 span {
 
 /* <Animation Progressive> */
 .entrees {
-  -webkit-animation: entrees 3s linear;
-  animation: entrees 3s linear;
-}
-
-@-webkit-keyframes entrees {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes entrees {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  -webkit-animation: apparition 3s linear;
+  animation: apparition 3s linear;
 }
 
 .plats {
-  -webkit-animation: plats 6s linear;
-  animation: plats 6s linear;
-}
-
-@-webkit-keyframes plats {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes plats {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  -webkit-animation: apparition 3s linear;
+  animation: apparition 3s linear 1.5s;
 }
 
 .desserts {
-  -webkit-animation: desserts 9s linear;
-  animation: desserts 9s linear;
+  -webkit-animation: apparition 3s linear;
+  animation: apparition 3s linear 3s;
 }
 
-@-webkit-keyframes desserts {
+@-webkit-keyframes apparition {
   0% {
     opacity: 0;
   }
@@ -294,7 +246,7 @@ h2 span {
   }
 }
 
-@keyframes desserts {
+@keyframes apparition {
   0% {
     opacity: 0;
   }
