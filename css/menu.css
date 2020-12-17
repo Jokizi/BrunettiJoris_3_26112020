@@ -221,17 +221,17 @@ h2 span {
 /* <Animation Progressive> */
 .entrees {
   -webkit-animation: apparition 3s linear;
-  animation: apparition 3s linear;
+  animation: apparition 2s linear;
 }
 
 .plats {
   -webkit-animation: apparition 3s linear;
-  animation: apparition 3s linear 1.5s;
+  animation: apparition 4s linear;
 }
 
 .desserts {
   -webkit-animation: apparition 3s linear;
-  animation: apparition 3s linear 3s;
+  animation: apparition 6s linear;
 }
 
 @-webkit-keyframes apparition {
