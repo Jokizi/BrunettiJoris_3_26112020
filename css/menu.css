@@ -394,8 +394,12 @@ footer i {
     margin-left: 8em;
   }
 
+  .anim:active {
+    width: 92%;
+  }
+
   .choix:active::after {
-    left: 88%;
+    left: 94.5%;
   }
 
   .commande button {
